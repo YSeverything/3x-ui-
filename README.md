@@ -1,4 +1,3 @@
-[English](/README.md) | [فارسی](/README.fa_IR.md) | [中文](/README.zh_CN.md) | [Español](/README.es_ES.md) | [Русский](/README.ru_RU.md)
 
 <p align="center">
   <picture>
