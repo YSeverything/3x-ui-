@@ -1639,63 +1639,63 @@ SSH_port_forwarding() {
 }
 
 show_usage() {
-    echo -e "┌───────────────────────────────────────────────────────┐
-│  ${blue}x-ui 控制菜单使用方法（子命令）：${plain}              │
-│                                                       │
-│  ${blue}x-ui${plain}               - 显示管理菜单               │
-│  ${blue}x-ui start${plain}         - 启动服务                  │
-│  ${blue}x-ui stop${plain}          - 停止服务                  │
-│  ${blue}x-ui restart${plain}       - 重启服务                  │
-│  ${blue}x-ui status${plain}        - 查看状态                  │
-│  ${blue}x-ui settings${plain}      - 查看当前设置              │
-│  ${blue}x-ui enable${plain}        - 启用开机自启              │
-│  ${blue}x-ui disable${plain}       - 禁用开机自启              │
-│  ${blue}x-ui log${plain}           - 查看日志                  │
-│  ${blue}x-ui banlog${plain}        - 查看封禁日志              │
-│  ${blue}x-ui update${plain}        - 更新面板                  │
-│  ${blue}x-ui legacy${plain}        - 安装旧版本                │
-│  ${blue}x-ui install${plain}       - 全新安装                  │
-│  ${blue}x-ui uninstall${plain}     - 完全卸载                  │
+    echo -e "┌───────────────────────────────────────────────────────
+│  ${blue}x-ui 控制菜单使用方法（子命令）：${plain}              
+│                                                       
+│  ${blue}x-ui${plain}               - 显示管理菜单               
+│  ${blue}x-ui start${plain}         - 启动服务                  
+│  ${blue}x-ui stop${plain}          - 停止服务                  
+│  ${blue}x-ui restart${plain}       - 重启服务                  
+│  ${blue}x-ui status${plain}        - 查看状态                  
+│  ${blue}x-ui settings${plain}      - 查看当前设置              
+│  ${blue}x-ui enable${plain}        - 启用开机自启              
+│  ${blue}x-ui disable${plain}       - 禁用开机自启             
+│  ${blue}x-ui log${plain}           - 查看日志                  
+│  ${blue}x-ui banlog${plain}        - 查看封禁日志              
+│  ${blue}x-ui update${plain}        - 更新面板                  
+│  ${blue}x-ui legacy${plain}        - 安装旧版本                
+│  ${blue}x-ui install${plain}       - 全新安装                  
+│  ${blue}x-ui uninstall${plain}     - 完全卸载                  
 └───────────────────────────────────────────────────────┘"
 }
 
 show_menu() {
     echo -e "
-╔───────────────────────────────────────────────────────╗
-│   ${green}3X-UI 面板管理脚本${plain}                           │
-│   ${green}0.${plain} 退出脚本                                  │
-│───────────────────────────────────────────────────────│
-│   ${green}1.${plain} 安装面板                                  │
-│   ${green}2.${plain} 更新面板                                  │
-│   ${green}3.${plain} 更新菜单                                  │
-│   ${green}4.${plain} 安装旧版                                  │
-│   ${green}5.${plain} 卸载面板                                  │
-│───────────────────────────────────────────────────────│
-│   ${green}6.${plain} 重置用户名/密码/安全令牌                  │
-│   ${green}7.${plain} 重置Web路径                               │
-│   ${green}8.${plain} 恢复默认设置                              │
-│   ${green}9.${plain} 修改面板端口                              │
-│  ${green}10.${plain} 查看当前设置                              │
-│───────────────────────────────────────────────────────│
-│  ${green}11.${plain} 启动面板                                  │
-│  ${green}12.${plain} 停止面板                                  │
-│  ${green}13.${plain} 重启面板                                  │
-│  ${green}14.${plain} 查看状态                                  │
-│  ${green}15.${plain} 日志管理                                  │
-│───────────────────────────────────────────────────────│
-│  ${green}16.${plain} 启用自启                                  │
-│  ${green}17.${plain} 禁用自启                                  │
-│───────────────────────────────────────────────────────│
-│  ${green}18.${plain} SSL证书管理                               │
-│  ${green}19.${plain} Cloudflare证书                            │
-│  ${green}20.${plain} IP限制管理                                │
-│  ${green}21.${plain} 防火墙管理                                │
-│  ${green}22.${plain} SSH端口转发                               │
-│───────────────────────────────────────────────────────│
-│  ${green}23.${plain} 启用BBR                                   │
-│  ${green}24.${plain} 更新地理文件                              │
-│  ${green}25.${plain} 网络测速                                  │
-╚───────────────────────────────────────────────────────╝
+╔───────────────────────────────────────────────────────
+│   ${green}3X-UI 面板管理脚本${plain}                    
+│   ${green}0.${plain} 退出脚本                          
+│───────────────────────────────────────────────────────
+│   ${green}1.${plain} 安装面板                              
+│   ${green}2.${plain} 更新面板                              
+│   ${green}3.${plain} 更新菜单                             
+│   ${green}4.${plain} 安装旧版                             
+│   ${green}5.${plain} 卸载面板                           
+│───────────────────────────────────────────────────────
+│   ${green}6.${plain} 重置用户名/密码/安全令牌               
+│   ${green}7.${plain} 重置Web路径                           
+│   ${green}8.${plain} 恢复默认设置                       
+│   ${green}9.${plain} 修改面板端口                             
+│  ${green}10.${plain} 查看当前设置                              
+│───────────────────────────────────────────────────────
+│  ${green}11.${plain} 启动面板                                  
+│  ${green}12.${plain} 停止面板                                  
+│  ${green}13.${plain} 重启面板                                  
+│  ${green}14.${plain} 查看状态                                  
+│  ${green}15.${plain} 日志管理                                  
+│───────────────────────────────────────────────────────
+│  ${green}16.${plain} 启用自启                                  
+│  ${green}17.${plain} 禁用自启                                  
+│───────────────────────────────────────────────────────
+│  ${green}18.${plain} SSL证书管理                               
+│  ${green}19.${plain} Cloudflare证书                            
+│  ${green}20.${plain} IP限制管理                                
+│  ${green}21.${plain} 防火墙管理                                
+│  ${green}22.${plain} SSH端口转发                               
+│───────────────────────────────────────────────────────
+│  ${green}23.${plain} 启用BBR                                   
+│  ${green}24.${plain} 更新地理文件                              
+│  ${green}25.${plain} 网络测速                                  
+╚───────────────────────────────────────────────────────
 "
     show_status
     echo && read -p "请输入数字选择 [0-25]：" num
