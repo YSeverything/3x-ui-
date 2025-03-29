@@ -209,24 +209,24 @@ install_x-ui() {
     systemctl start x-ui
     echo -e "${green}x-ui ${tag_version}${plain} 安装完成，服务已启动"
     echo -e ""
-    echo -e "┌───────────────────────────────────────────────────────┐
-│  ${blue}x-ui 控制命令使用说明：${plain}                          │
-│                                                       │
-│  ${blue}x-ui${plain}              - 显示管理菜单                  │
-│  ${blue}x-ui start${plain}        - 启动服务                      │
-│  ${blue}x-ui stop${plain}         - 停止服务                      │
-│  ${blue}x-ui restart${plain}      - 重启服务                      │
-│  ${blue}x-ui status${plain}       - 查看状态                      │
-│  ${blue}x-ui settings${plain}     - 查看配置信息                  │
-│  ${blue}x-ui enable${plain}       - 设置开机启动                  │
-│  ${blue}x-ui disable${plain}      - 取消开机启动                  │
-│  ${blue}x-ui log${plain}          - 查看日志                      │
-│  ${blue}x-ui banlog${plain}       - 查看封禁记录                  │
-│  ${blue}x-ui update${plain}       - 更新面板                      │
-│  ${blue}x-ui legacy${plain}       - 安装旧版                      │
-│  ${blue}x-ui install${plain}      - 全新安装                      │
-│  ${blue}x-ui uninstall${plain}    - 完全卸载                      │
-└───────────────────────────────────────────────────────┘"
+    echo -e "┌───────────────────────────────────────────────────────
+│  ${blue}x-ui 控制命令使用说明：${plain}                          
+│                                                       
+│  ${blue}x-ui${plain}              - 显示管理菜单                  
+│  ${blue}x-ui start${plain}        - 启动服务                      
+│  ${blue}x-ui stop${plain}         - 停止服务                      
+│  ${blue}x-ui restart${plain}      - 重启服务                      
+│  ${blue}x-ui status${plain}       - 查看状态                      
+│  ${blue}x-ui settings${plain}     - 查看配置信息                  
+│  ${blue}x-ui enable${plain}       - 设置开机启动                  
+│  ${blue}x-ui disable${plain}      - 取消开机启动                  
+│  ${blue}x-ui log${plain}          - 查看日志                      
+│  ${blue}x-ui banlog${plain}       - 查看封禁记录                  
+│  ${blue}x-ui update${plain}       - 更新面板                      
+│  ${blue}x-ui legacy${plain}       - 安装旧版                      
+│  ${blue}x-ui install${plain}      - 全新安装                      
+│  ${blue}x-ui uninstall${plain}    - 完全卸载                      
+└───────────────────────────────────────────────────────"
 }
 
 echo -e "${green}安装程序启动...${plain}"
